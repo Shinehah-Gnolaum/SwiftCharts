@@ -89,7 +89,7 @@ open class ChartPointsLineLayer<T: ChartPoint>: ChartPointsLayer<T> {
     public let useView: Bool
     public let delayInit: Bool
     
-    fileprivate var isInTransform = false
+    public var isInTransform = false
     
     public init(xAxis: ChartAxis, yAxis: ChartAxis, lineModels: [ChartLineModel<T>], pathGenerator: ChartLinesViewPathGenerator = StraightLinePathGenerator(), displayDelay: Float = 0, useView: Bool = true, delayInit: Bool = false) {
         self.lineModels = lineModels
